@@ -42,3 +42,7 @@ class StringsRanker:
         sorted_strings = strings[argsorted_y_scores][:cutoff]
 
         return zip(y_scores[argsorted_y_scores], sorted_strings)
+
+if __name__ == '__main__':
+    x = StringsRanker()
+    x.rank_strings(["inon"])
